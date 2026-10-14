@@ -8,6 +8,7 @@ Built as part of [The Odin Project Node.js](https://www.theodinproject.com/lesso
 
 - Native Node.js `http` module server.
 - Route handling for `/`, `/about`, and `/contact-me`.
+- Redirect handling (`302 Found`) from `/home` to `/`.
 - Fallback `404.html` page for undefined routes.
 - Safe path resolution using Node's `path` module.
 
@@ -35,10 +36,12 @@ Built as part of [The Odin Project Node.js](https://www.theodinproject.com/lesso
 
 Open your browser and go to:
 
-- Home: http://localhost:8080/
+- **Home:** http://localhost:8080/
 
-- About: http://localhost:8080/about
+- **Redirect Test:** http://localhost:8080/home (redirects to `/`)
 
-- Contact: http://localhost:8080/contact-me
+- **About:** http://localhost:8080/about
 
-- 404 Page: Try any invalid URL (e.g., http://localhost:8080/random)
+- **Contact:** http://localhost:8080/contact-me
+
+- **404 Page:** Try any invalid URL (e.g., http://localhost:8080/random)
