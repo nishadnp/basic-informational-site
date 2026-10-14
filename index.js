@@ -10,6 +10,10 @@ const server = http.createServer((req, res) => {
         case '/': 
             page = 'index.html';
             break;
+        case '/home':
+            res.writeHead(302, { 'Location': '/' });
+            res.end();
+            return;
         case '/about':
             page = 'about.html';
             break;
